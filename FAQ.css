@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.outer-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-container {
+  width: 80%;
+  height: 75%;
+  background-image: url(assets/images/background-pattern-desktop.svg);
+  background-size: 100% auto;
+  background-position: top;
+  background-color: hsl(275, 100%, 97%);
+  overflow: hidden;
+  padding: 30px;
+  background-repeat: no-repeat;
+  position: relative;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.faq-heading {
+  margin-left: 60px;
+}
+
+.star-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  padding-top: 52px;
+  padding-left: 20px;
+}
+
+.faq-container {
+  background-color: white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  width: 45%;
+  height: 57%;
+  border: 1px solid #ccc;
+  padding: 50px;
+  border-radius: 20px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.faq-container h2 {
+  margin-top: 0px;
+  font-size: 40px;
+  font-weight: bolder;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+/* Additional styling for FAQ items */
+.faq-item {
+  font-size: 13px;
+  /* Set font size */
+  margin-bottom: 20px;
+  /* Add some space between items */
+  position: relative;
+  /* Position relative for absolute positioning */
+  display: flex;
+  flex-direction: column;
+  max-width: calc(100% - 10px);
+}
+
+.question-container:hover .question {
+  color: #AD28EB;
+  cursor: pointer;
+}
+
+.question:hover {
+  color: #AD28EB;
+  cursor: pointer;
+}
+
+.question-container {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: px;
+}
+
+.expand-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.answer {
+  display: none;
+  font-size: 16px;
+  margin-top: 5px;
+  max-width: calc(100% - 40px);
+  line-height: 1.5;
+  color: hsl(292, 16%, 49%);
+  font-weight: 400;
+
+}
+
+.expand-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.star-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.expand-btn:hover {
+  background-color: #AD28EB;
+}
+
+/* Focus state for expand buttons */
+.expand-btn:focus {
+  outline: 2px solid #AD28EB;
+  outline-offset: 2px;
+}
